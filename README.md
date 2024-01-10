@@ -20,7 +20,7 @@ Antes de começar, certifique-se de ter instalado:
 - Composer (~2.6.6)
 - Magento2 (~2.4.6)
 
-## Instalar no Magento
+## Instalação
 
 Para instalar este modulo no Magento, siga os passos abaixo na raiz do Magento2:
 
