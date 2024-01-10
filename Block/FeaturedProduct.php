@@ -103,12 +103,8 @@ class FeaturedProduct extends Template
     private function getGroupedProductStockQuantity($product)
     {
         $totalStock = 0;
-
-        // Obtém os produtos associados ao produto agrupado
         $productTypeInstance = $product->getTypeInstance();
         $childProducts = $productTypeInstance->getAssociatedProducts($product);
-
-        // Soma o estoque de cada produto associado
         foreach ($childProducts as $child) {
             if ($child->isSaleable()) {
                 $stockQty = $this->stockState->getStockQty($child->getId(), $child->getStore()->getWebsiteId());
@@ -133,8 +129,6 @@ class FeaturedProduct extends Template
             foreach ($selectionCollection as $selection) {
                 if ($selection->isSaleable()) {
                     $stockQty = $this->stockState->getStockQty($selection->getId(), $selection->getStore()->getWebsiteId());
-                    
-                    // Atualiza o estoque mínimo com base na menor quantidade de estoque de um item selecionável
                     if ($stockQty < $minStock) {
                         $minStock = $stockQty;
                     }
@@ -270,6 +264,4 @@ class FeaturedProduct extends Template
         }
         return __('Preço não disponível');
     }
-    
-
 }
