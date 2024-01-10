@@ -1,0 +1,16 @@
+<?php if ($block->isBlockEnabled()) : ?>
+<div class="carousel-container">
+    <?php foreach ($block->getFeaturedProducts() as $product) : ?>
+        <a href="<?php echo $product->getProductUrl(); ?>" class="carousel-item">
+            <div class="carousel-item">
+                <div class="image">
+                    <img src="<?php echo $block->getImageUrl($product); ?>" alt="<?php echo $product->getName(); ?>">
+                </div>
+                <h3><?php echo $product->getName(); ?></h3>
+                <p>Preço: <?php echo $block->getPrice($product); ?></p>
+                <p><?php echo $block->getStockQuantity($product); ?></p>
+            </div>
+        </a>
+    <?php endforeach; ?>
+</div>
+<?php endif; ?>

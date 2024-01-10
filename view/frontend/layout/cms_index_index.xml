@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="MagentoExample_ProductHome::css/carousel.css"/>
+        <script src="MagentoExample_ProductHome::js/carousel.js"></script>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="MagentoExample\ProductHome\Block\FeaturedProduct" name="producthome.featuredproduct" template="MagentoExample_ProductHome::carousel.phtml" />
+        </referenceContainer>
+    </body>
+</page>

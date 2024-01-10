@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/config.xsd">
+    <default>
+        <producthome>
+            <general>
+                <enable>1</enable>
+                <product_id>3,5,41,45,46,62,78,94</product_id>
+            </general>
+        </producthome>
+    </default>
+</config>
