@@ -1,4 +1,4 @@
-# Módulo Magento e para Carousel de produtos
+# Módulo Magento para Carousel de produtos
 
 Este repositório contém um módulo para Magento2 exibir um Carousel de produtos na página inicial do tema Luma.
 
